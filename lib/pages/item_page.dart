@@ -17,11 +17,13 @@ class ItemPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
-                height: 300, width: 300, child: Image.asset(itemArgs.image)),
+            Container(child: Image.asset(itemArgs.image)),
+            // SizedBox(
+            //     height: 300, width: 300, child: Image.asset(itemArgs.image)),
             Text(itemArgs.name + ' : ' + itemArgs.price.toString(),
                 style: TextStyle(
-                    fontSize: 25, )),
+                  fontSize: 25,
+                )),
           ],
         ),
       ),
