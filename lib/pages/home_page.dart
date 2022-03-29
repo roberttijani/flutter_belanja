@@ -3,8 +3,9 @@ import 'package:flutter_belanja/models/item.dart';
 
 class HomePage extends StatelessWidget {
   final List<Item> items = [
-    Item(name: 'Sugar', price: 5000),
-    Item(name: 'Salt', price: 2000),
+    Item(name: 'Sugar', price: 5000, image: 'assets/images/gula.jpg'),
+    Item(name: 'Salt', price: 2000, image: 'assets/images/garam.jpg'),
+    Item(name: 'Coffee', price: 2000, image: 'assets/images/kopi.jpg'),
   ];
   HomePage({Key? key}) : super(key: key);
 
